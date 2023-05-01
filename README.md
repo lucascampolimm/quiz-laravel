@@ -11,4 +11,5 @@
 **Softwares que estamos utilizando nesse projeto:**
 - XAMPP: https://www.apachefriends.org/download.html
 - Composer: https://getcomposer.org/download/
+- Laravel: https://laravel.com/docs/9.x/installation/
 - Visual Studio Code: https://code.visualstudio.com/download/
