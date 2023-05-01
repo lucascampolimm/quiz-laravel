@@ -8,7 +8,7 @@
 
 # Soft
 
--Softwares que estamos utilizamos nesse projeto:
-- Xampp: https://www.apachefriends.org/download.html
+**Softwares que estamos utilizamos nesse projeto:**
+- XAMPP: https://www.apachefriends.org/download.html
 - Composer: https://getcomposer.org/download/
 - Visual Studio Code: https://code.visualstudio.com/download/
