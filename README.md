@@ -18,7 +18,7 @@
 
 - PHP 8.0
 
-# Manipulate Project
+# Manipulate
 
 0 - Instale as dependências do composer atráves do comando:
 - composer i
