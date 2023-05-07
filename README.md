@@ -12,6 +12,7 @@
 - XAMPP: https://www.apachefriends.org/download.html
 - Composer: https://getcomposer.org/download/
 - Laravel: https://laravel.com/docs/9.x/installation/
+- NodeJS: https://nodejs.org/pt-br/download/current/
 - Visual Studio Code: https://code.visualstudio.com/download/
 
 # Requirements
@@ -26,7 +27,7 @@
 # Manipulate
 
 0 - Instale as dependências do composer atráves do comando:
-- composer i
+- composer update
 
 1 - Configure o .env de acordo com sua necessidade.
 
@@ -34,7 +35,7 @@
 - php artisan key:generate
 
 3 - Migre as tabelas para a base de dados com o comando:
-- php artisan migrate
+- php artisan migrate --force
 
 4 - Inicie o servidor atráves do comando:
 - php artisan serve
