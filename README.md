@@ -23,8 +23,7 @@
 0 - Instale as dependências do composer atráves do comando:
 - composer i
 
-1 -
-- Configure o .env de acordo com sua necessidade.
+1 - Configure o .env de acordo com sua necessidade.
 
 2 - Gere uma nova chave para o Laravel com o comando:
 - php artisan key:generate
