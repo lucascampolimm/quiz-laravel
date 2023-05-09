@@ -17,5 +17,6 @@ Write-Host "Migrando tabelas para a base de dados.."
 php artisan migrate --force
 
 Write-Host ""
+Write-Host "Iniciando servidor.."
 Start-Process explorer "http://127.0.0.1:8000"
 php artisan serve
