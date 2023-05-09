@@ -17,13 +17,5 @@ Write-Host "Migrando tabelas para a base de dados.."
 php artisan migrate --force
 
 Write-Host ""
-$answer = Read-Host "Deseja iniciar o servidor do Laravel? (S/N)"
-
-if ($answer -eq "S") {
-    Start-Process explorer "http://127.0.0.1:8000"
-    php artisan serve
-} else {
-    Write-Host ""
-    Write-Host "Servidor não iniciado!"
-    Write-Host ""
-}
+Start-Process explorer "http://127.0.0.1:8000"
+php artisan serve
