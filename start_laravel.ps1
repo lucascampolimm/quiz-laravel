@@ -1,6 +1,3 @@
-# Script de automação, lembre-se de configurar o .env antes de utilizar.
-# Este script está configurado para automatizar um ambiente com o pacote XAMPP.
-
 $env:Path += ";C:\xampp\php"
 $env:Path += ";C:\xampp\mysql\bin"
 $env:Path += ";C:\ProgramData\ComposerSetup\bin"
