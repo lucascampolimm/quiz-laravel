@@ -4,6 +4,7 @@ $env:Path += ";C:\ProgramData\ComposerSetup\bin"
 $env:Path += ";$env:APPDATA\Composer\vendor\bin"
 $env:Path += ";$env:APPDATA\npm"
 
+Write-Host ""
 Write-Host "Iniciando XAMPP.."
 & "C:\xampp\xampp_start.exe" startapache -NoNewWindow -Wait
 & "C:\xampp\xampp_start.exe" startmysql -NoNewWindow -Wait
