@@ -13,7 +13,7 @@
 - Microsoft Visual C++ 2015-2022 Redistributable (x64)
 - Microsoft Visual C++ 2013 Redistributable (x86)
 - Microsoft Visual C++ 2013 Redistributable (x64)
-- 
+
 # Software
 
 - XAMPP: https://www.apachefriends.org/pt_br/index.html
