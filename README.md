@@ -8,7 +8,7 @@
 
 # Requirements
 
-- PHP 8.1 ou superior
+- PHP 8.1
 - Microsoft Visual C++ 2015-2022 Redistributable (x86)
 - Microsoft Visual C++ 2015-2022 Redistributable (x64)
 - Microsoft Visual C++ 2013 Redistributable (x86)
