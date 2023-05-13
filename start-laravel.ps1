@@ -6,7 +6,6 @@ $env:Path += ";$env:APPDATA\npm"
 
 Write-Host ""
 Write-Host "Instalando dependências.."
-Write-Host ""
 Start-Process composer update -NoNewWindow -Wait
 
 Write-Host ""
