@@ -4,41 +4,37 @@
 
 **Integrantes:** [Lucas Campolim](https://github.com/lucascampolimm) e [Tharlis David](https://github.com/tharlisdavid)
 
-**Tema:** Desempenho de Alunos
-
-# Software
-
-**Softwares que estamos utilizando nesse projeto:**
-- XAMPP: https://www.apachefriends.org/download.html
-- Composer: https://getcomposer.org/download/
-- Laravel: https://laravel.com/docs/9.x/installation/
-- NodeJS: https://nodejs.org/pt-br/download/current/
-- Visual Studio Code: https://code.visualstudio.com/download/
+**Tema:** Sistema de Quiz
 
 # Requirements
 
-- PHP 8.0 ou superior.
-- Extensões PHP necessárias habilitadas (JSON, OpenSSL, PDO, Mbstring, Tokenizer, XML).
-- Extensões opcionais do PHP recomendadas (BCMath, Ctype, Fileinfo, GMP, Imagick, Intl, LDAP, Memcached, PCRE, Redis, SQLite3, Xdebug).
-- Servidor web compatível (Apache, Nginx, etc.).
-- Banco de dados compatível (MySQL, Postgres, SQLite, SQL Server, Oracle).
-- Composer (gerenciador de pacotes para PHP).
+- PHP 8.1 ou superior
+- Microsoft Visual C++ 2015-2022 Redistributable (x86)
+- Microsoft Visual C++ 2015-2022 Redistributable (x64)
+- Microsoft Visual C++ 2013 Redistributable (x86)
+- Microsoft Visual C++ 2013 Redistributable (x64)
+
+# Software
+
+- XAMPP: https://www.apachefriends.org/pt_br/index.html
+- Composer: https://getcomposer.org/
+- Laravel: https://laravel.com/
+- Node.js: https://nodejs.org/pt-br/
+- Visual Studio Code: https://code.visualstudio.com/
+- Visual C++ Redistributable: https://learn.microsoft.com/pt-br/cpp/windows/latest-supported-vc-redist/
 
 # Manipulate
 
-0 - Instale as dependências do composer atráves do comando:
-- composer update
+0 - Execute o script start-xampp para iniciar o serviço Apache e MySQL.
+- .\start-xampp.ps1
 
-1 - Configure o .env de acordo com sua necessidade.
+1 - Execute o script create-database para criar um usuário no servidor do MySQL com privilégios necessários e criar a base de dados com a codificação correta.
+- .\create-database.ps1
 
-2 - Gere uma nova chave para o Laravel com o comando:
-- php artisan key:generate
+2 - Configure o .env de acordo com sua necessidade.
 
-3 - Migre as tabelas para a base de dados com o comando:
-- php artisan migrate --force
+3 - Execute o script start-laravel para instalar as dependências do projeto, gerar nova chave para o Laravel, migrar as tabelas para base de dados e iniciar o servidor.
+- .\start-laravel.ps1
 
-4 - Inicie o servidor atráves do comando:
-- php artisan serve
-
-5 - Acesse o projeto atráves do link:
+4 - Acesse o projeto atráves do localhost:
 - http://127.0.0.1:8000/
