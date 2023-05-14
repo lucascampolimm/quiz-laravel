@@ -14,7 +14,7 @@
 - Microsoft Visual C++ 2013 Redistributable (x86)
 - Microsoft Visual C++ 2013 Redistributable (x64)
 
-# Software
+# Support Links
 
 - XAMPP: https://www.apachefriends.org/pt_br/index.html
 - Composer: https://getcomposer.org/
