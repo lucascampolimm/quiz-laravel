@@ -30,18 +30,17 @@
                             @endif
                         @endforeach
                     </select>
-
-                    <div style="padding-top: 16px;"><a href={{route('users.index')}}><x-primary-button> Listar Usuários </x-primary-button></a></div>
-
-                    <div style="padding-top: 16px;">
-                        <form style="padding: 0" method="post" action="{{ route('logout') }}" class="p-6">
-                            @csrf
-                            <x-primary-button> Logout </x-primary-button>
-                    </div>
+                    <tbody>
+                        @foreach($users as $user)
+                            <tr>
+                                <th scope="row">{{ $user->id }}</th>
+                                <td>{{ $user->name }}</td>
+                                <td>{{ $user->email }}</td>
+                            </tr>
+                        @endforeach
+                    </tbody>
                 </div>
-
             </div>
         </div>
     </div>
-    <x-menu></x-menu>
 </x-app-layout>

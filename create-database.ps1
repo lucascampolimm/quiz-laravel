@@ -5,7 +5,7 @@ $env:Path += ";$env:APPDATA\Composer\vendor\bin"
 $env:Path += ";$env:APPDATA\npm"
 
 $server = "localhost"
-$database = "laravel_react"
+$database = "dblaravel"
 $username = "lucas"
 $password = "1234"
 
