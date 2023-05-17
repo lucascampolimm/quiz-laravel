@@ -31,7 +31,7 @@
 1 - Execute o script create-database para criar um usuário no servidor do MySQL com privilégios necessários e criar a base de dados com a codificação correta.
 - .\create-database.ps1
 
-2 - Configure o .env de acordo com sua necessidade.
+2 - Configure o .env.
 
 3 - Execute o script start-laravel para instalar as dependências do projeto, gerar nova chave para o Laravel, migrar as tabelas para base de dados e iniciar o servidor.
 - .\start-laravel.ps1
