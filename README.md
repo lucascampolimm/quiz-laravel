@@ -1,1 +1,1 @@
-# quiz-laravel
+Sistema de quiz em desenvolvimento.
