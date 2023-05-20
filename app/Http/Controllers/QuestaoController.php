@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use App\Models\User;
+use App\Models\Questao;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Http\RedirectResponse;
@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
 
-class RegisteredUserController extends Controller
+class QuestaoController extends Controller
 {
     /**
      * Display the registration view.
@@ -32,21 +32,21 @@ class RegisteredUserController extends Controller
     {
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
-            'password' => ['required', 'confirmed', Rules\Password::defaults()],
             'tipo_perfil' => ['required', 'integer'],
+            'enunciado' => ['required', 'string', 'max:2000'],
+            'resposta' => ['required', 'string', 'max:2000'],
         ]);
 
-        $user = User::create([
+        $questao = Questao::create([
             'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
             'tipo_perfil' => $request->tipo_perfil,
+            'enunciado' => $request->enunciado,
+            'respota' => $request->resposta,
         ]);
 
-        event(new Registered($user));
+        event(new Registered($questao));
 
-        Auth::login($user);
+        // Auth::login($user);
 
         return redirect(RouteServiceProvider::HOME);
     }
