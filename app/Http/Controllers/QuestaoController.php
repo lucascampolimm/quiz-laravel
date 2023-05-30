@@ -41,8 +41,10 @@ class QuestaoController extends Controller
             'name' => $request->name,
             'tipo_perfil' => $request->tipo_perfil,
             'enunciado' => $request->enunciado,
-            'respota' => $request->resposta,
+            'resposta' => $request->resposta,
         ]);
+
+        $questao->save();
 
         event(new Registered($questao));
 

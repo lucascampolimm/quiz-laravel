@@ -9,6 +9,6 @@ class QuestaoModel extends Model
 {
     use HasFactory;
 
-    protected $table = 'questao';
+    protected $table = 'questoes';
 
 }

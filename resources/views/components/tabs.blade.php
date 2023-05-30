@@ -15,6 +15,9 @@
             @csrf
 
             <div>
+                <input type="hidden" name="name" value={{ Auth::user()->name }}>
+                <input type="hidden" name="tipo_perfil" value='{{ Auth::user()->tipo_perfil }}'>
+                <input type="hidden" name="resposta" value='Em branco'>
                 <x-input-label for="enunciado" :value={{'Enunciado'}} />
                 <x-text-area id="enunciado" rows="4" cols="50" maxlenght="2000" class="block mt-1 w-full" type="text" name="enunciado" required autofocus/>
                 <x-input-error :messages={{'faz o L'}} class="mt-2" />
