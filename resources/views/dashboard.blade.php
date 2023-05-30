@@ -39,9 +39,9 @@
                     <div style="padding-top: 16px;"><a href={{route('users.index')}}><x-primary-button> Listar Usuários </x-primary-button></a></div>
 
                     <div style="padding-top: 16px;">
-                        <form style="padding: 0" method="post" action="{{ route('logout') }}" class="p-6">
+                        <form style="padding: 0; display: flex; justify-content: flex-end; margin-top: -70px" method="post" action="{{ route('logout') }}" class="p-6">
                             @csrf
-                            <x-primary-button> Logout </x-primary-button>
+                            <x-primary-button> Sair </x-primary-button>
                     </div>
                 </div>
 
