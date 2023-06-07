@@ -25,7 +25,7 @@
 
 # Manipulate
 
-0 - Ative a execução de scripts não assinados digitando esse comando no PowerShell como Administrador.
+0 - Ative a execução de scripts não assinados digitando esse comando no PowerShell.
 - Set-ExecutionPolicy Bypass -Scope Process
 
 1 - Execute o script start-xampp para iniciar o serviço Apache e MySQL.
