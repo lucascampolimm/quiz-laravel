@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# quiz-laravel
-=======
 # Information
 
 **Disciplina:** Códigos de Alta Perfomance Web
@@ -41,4 +38,3 @@
 
 4 - Acesse o projeto atráves do localhost:
 - http://127.0.0.1:8000/
->>>>>>> bae2fa1e2081c4aea58f34f95ed7358fe0ad2df0
