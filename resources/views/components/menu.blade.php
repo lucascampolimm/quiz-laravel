@@ -1,4 +1,6 @@
 <style>
+/* Estilos CSS */
+
 #menu__toggle {
   position: absolute;
   opacity: 0;
@@ -80,7 +82,8 @@
 </style>
 
 @if (isset(Auth::user()->name) && request()->routeIs('dashboard'))
-    <!-- Settings Dropdown -->
+    <!-- Bloco condicional Blade -->
+    <!-- Menu suspenso de configurações -->
     <div class="sm:flex" style="display: block; position: fixed; top: 18px; right: 65px;">
         <button>
             <div>{{ Auth::user()->name }}</div>
@@ -88,7 +91,10 @@
     </div>
 @endif
 
-<div class="hamburger-menu">
+<!-- Testando um menu qualquer -->
+
+<!--
+    <div class="hamburger-menu">
     <input id="menu__toggle" type="checkbox" />
     <label class="menu__btn" for="menu__toggle">
       <span></span>
@@ -102,3 +108,4 @@
       <li><a class="menu__item" href="#">Twitter</a></li>
     </ul>
 </div>
+-->

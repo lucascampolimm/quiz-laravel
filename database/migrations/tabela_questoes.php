@@ -7,12 +7,13 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration
 {
     /**
-     * Run the migrations.
+     * Executa as migrações.
      *
      * @return void
      */
     public function up()
     {
+        // Cria a tabela 'questoes'
         Schema::create('questoes', function (Blueprint $table) {
             $table->id();
             $table->string('name');
@@ -25,12 +26,13 @@ return new class extends Migration
     }
 
     /**
-     * Reverse the migrations.
+     * Reverte as migrações.
      *
      * @return void
      */
     public function down()
     {
+        // Exclui a tabela 'questoes'
         Schema::dropIfExists('questoes');
     }
 };

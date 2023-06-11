@@ -1,3 +1,7 @@
+<#
+Script para criar um usuário e um banco de dados.
+#>
+
 $env:Path += ";C:\xampp\php"
 $env:Path += ";C:\xampp\mysql\bin"
 $env:Path += ";C:\ProgramData\ComposerSetup\bin"

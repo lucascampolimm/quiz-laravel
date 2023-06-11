@@ -16,7 +16,7 @@ use Illuminate\View\View;
 class RegisteredUserController extends Controller
 {
     /**
-     * Display the registration view.
+     * Exibe a view de registro.
      */
     public function create(): View
     {
@@ -24,12 +24,13 @@ class RegisteredUserController extends Controller
     }
 
     /**
-     * Handle an incoming registration request.
+     * Manipula uma solicitação de registro recebida.
      *
      * @throws \Illuminate\Validation\ValidationException
      */
     public function store(Request $request): RedirectResponse
     {
+        // Valida os dados recebidos do formulário
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:'.User::class],
@@ -37,6 +38,7 @@ class RegisteredUserController extends Controller
             'tipo_perfil' => ['required', 'integer'],
         ]);
 
+        // Cria um novo usuário com base nos dados recebidos
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -44,10 +46,13 @@ class RegisteredUserController extends Controller
             'tipo_perfil' => $request->tipo_perfil,
         ]);
 
+        // Dispara o evento Registered com o usuário recém-criado como argumento
         event(new Registered($user));
 
+        // Realiza o login do usuário
         Auth::login($user);
 
+        // Redireciona para a rota RouteServiceProvider::HOME
         return redirect(RouteServiceProvider::HOME);
     }
 }

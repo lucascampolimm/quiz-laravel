@@ -1,3 +1,7 @@
+<#
+Script para iniciar os serviços necessários do XAMPP.
+#>
+
 $env:Path += ";C:\xampp\php"
 $env:Path += ";C:\xampp\mysql\bin"
 $env:Path += ";C:\ProgramData\ComposerSetup\bin"
